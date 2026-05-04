@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Profiling - Feature Analysis & Personality Type</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Face Profiling System</h1>
+            <p class="subtitle">Facial Feature Analysis & 16 Personality Type Detection</p>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Camera/Upload Section -->
+            <section class="camera-section">
+                <div class="camera-container">
+                    <div class="camera-header">
+                        <h2>Capture Your Face</h2>
+                        <div class="tabs">
+                            <button class="tab-btn active" data-tab="webcam">Webcam</button>
+                            <button class="tab-btn" data-tab="upload">Upload Photo</button>
+                        </div>
+                    </div>
+
+                    <!-- Webcam Tab -->
+                    <div class="tab-content active" id="webcam-tab">
+                        <div class="video-wrapper">
+                            <video id="video" autoplay playsinline></video>
+                            <canvas id="canvas" style="display: none;"></canvas>
+                        </div>
+                        <div class="camera-controls">
+                            <button id="startBtn" class="btn btn-primary">Start Camera</button>
+                            <button id="captureBtn" class="btn btn-success" disabled>Capture Photo</button>
+                            <button id="stopBtn" class="btn btn-danger" disabled>Stop Camera</button>
+                        </div>
+                    </div>
+
+                    <!-- Upload Tab -->
+                    <div class="tab-content" id="upload-tab">
+                        <div class="upload-area" id="uploadArea">
+                            <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="17 8 12 3 7 8"></polyline>
+                                <line x1="12" y1="3" x2="12" y2="15"></line>
+                            </svg>
+                            <p>Drag and drop your photo here</p>
+                            <p class="small-text">or</p>
+                            <input type="file" id="fileInput" accept="image/*" style="display: none;">
+                            <button id="selectFileBtn" class="btn btn-secondary">Browse Files</button>
+                        </div>
+                        <img id="uploadedImage" style="display: none; max-width: 100%; margin-top: 20px;">
+                    </div>
+                </div>
+
+                <!-- Analysis Button -->
+                <div class="analysis-button-container">
+                    <button id="analyzeBtn" class="btn btn-large btn-primary" disabled>Analyze Face & Profile</button>
+                    <p id="statusMessage" class="status-message"></p>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section id="resultsSection" class="results-section" style="display: none;">
+                <h2>Analysis Results</h2>
+
+                <!-- Personality Profile -->
+                <div class="result-card personality-card">
+                    <h3>Your Personality Profile</h3>
+                    <div class="personality-type">
+                        <div class="type-badge" id="typeBadge">XXXX</div>
+                        <div class="type-info">
+                            <h4 id="typeName">The Personality Type</h4>
+                            <p id="typeDescription">Description will appear here</p>
+                        </div>
+                    </div>
+                    
+                    <div class="confidence-meter">
+                        <label>Prediction Confidence</label>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="confidenceFill"></div>
+                        </div>
+                        <span id="confidenceText">0%</span>
+                    </div>
+
+                    <div class="traits-list">
+                        <h5>Key Traits</h5>
+                        <ul id="traitsList"></ul>
+                    </div>
+                </div>
+
+                <!-- Feature Measurements -->
+                <div class="result-card measurements-card">
+                    <h3>Facial Feature Measurements</h3>
+                    
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <h5>Eyes</h5>
+                            <p id="eyesSummary">Summary</p>
+                        </div>
+                        <div class="feature-item">
+                            <h5>Nose</h5>
+                            <p id="noseSummary">Summary</p>
+                        </div>
+                        <div class="feature-item">
+                            <h5>Mouth</h5>
+                            <p id="mouthSummary">Summary</p>
+                        </div>
+                        <div class="feature-item">
+                            <h5>Jaw</h5>
+                            <p id="jawSummary">Summary</p>
+                        </div>
+                    </div>
+
+                    <details>
+                        <summary>Detailed Measurements</summary>
+                        <div class="measurements-table">
+                            <table id="measurementsTable">
+                                <thead>
+                                    <tr>
+                                        <th>Measurement</th>
+                                        <th>Value</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="measurementsList">
+                                </tbody>
+                            </table>
+                        </div>
+                    </details>
+                </div>
+
+                <!-- Recommendations -->
+                <div class="result-card recommendations-card">
+                    <h3>Personalized Insights</h3>
+                    
+                    <div class="recommendation-item">
+                        <h5>💪 Your Strengths</h5>
+                        <p id="strengthsText">Based on your personality type</p>
+                    </div>
+
+                    <div class="recommendation-item">
+                        <h5>🌱 Areas for Growth</h5>
+                        <p id="growthText">Development opportunities</p>
+                    </div>
+
+                    <div class="recommendation-item">
+                        <h5>💬 Communication Style</h5>
+                        <p id="communicationText">How you interact</p>
+                    </div>
+
+                    <div class="recommendation-item">
+                        <h5>💼 Work Preferences</h5>
+                        <p id="workText">Ideal work environment</p>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="action-buttons">
+                    <button id="newAnalysisBtn" class="btn btn-secondary">New Analysis</button>
+                    <button id="downloadResultsBtn" class="btn btn-secondary">Download Results</button>
+                </div>
+            </section>
+
+            <!-- Loading Spinner -->
+            <div id="loadingSpinner" class="loading-spinner" style="display: none;">
+                <div class="spinner"></div>
+                <p>Analyzing face and personality...</p>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Face Profiling System v1.0 | Using OpenCV + dlib for accurate facial analysis</p>
+            <p class="disclaimer">This tool provides insights based on facial feature analysis and should be used for entertainment purposes.</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/webcam.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

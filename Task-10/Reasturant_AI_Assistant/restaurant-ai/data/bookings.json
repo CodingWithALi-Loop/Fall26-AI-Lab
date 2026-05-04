@@ -1,0 +1,12 @@
+{
+  "bookings": [
+    {
+      "date": "cancel",
+      "time": "11:00pm",
+      "party_size": "2",
+      "name": "AYESLI",
+      "phone": "03014774748",
+      "status": "confirmed"
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Ember & Crest — Fine Dining Order System</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
+<style>
+  .user-info-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background: linear-gradient(180deg, rgba(201,168,76,.08) 0%, transparent 100%);
+    border-bottom: 1px solid rgba(201,168,76,.08);
+    font-size: .85rem;
+    color: var(--gold-dim);
+  }
+  
+  .user-info-bar.hidden {
+    display: none;
+  }
+  
+  .user-welcome {
+    letter-spacing: .04em;
+  }
+  
+  .logout-btn {
+    background: rgba(201,168,76,.10);
+    border: 1px solid rgba(201,168,76,.25);
+    color: var(--gold);
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: .8rem;
+    transition: all .2s;
+    text-decoration: none;
+  }
+  
+  .logout-btn:hover {
+    background: rgba(201,168,76,.20);
+    border-color: rgba(201,168,76,.40);
+    color: var(--gold-light);
+  }
+</style>
+</head>
+<body>
+
+<div class="gfx-bg"></div>
+<div class="gfx-lines"></div>
+<div class="gfx-orb gfx-orb-1"></div>
+<div class="gfx-orb gfx-orb-2"></div>
+<div class="gfx-orb gfx-orb-3"></div>
+
+<div class="toast" id="toast"></div>
+
+<div class="page-shell">
+
+  <div class="user-info-bar hidden" id="user-info-bar">
+    <span class="user-welcome">Welcome, <strong id="user-name"></strong></span>
+    <button class="logout-btn" onclick="handleLogout()">Sign Out</button>
+  </div>
+
+  <div class="masthead">
+    <div class="masthead-emblem">
+      <div class="emblem-bar"></div>
+      <span class="emblem-icon">🕯</span>
+      <div class="emblem-bar right"></div>
+    </div>
+    <h1>Ember &amp; Crest</h1>
+    <p class="masthead-sub">Fine Dining · Est. 1998</p>
+  </div>
+
+  <div class="gold-divider">
+    <span></span>
+    <i>Order Concierge</i>
+    <span></span>
+  </div>
+
+  <div class="widget-shell">
+
+    <div class="widget-header">
+      <div class="header-left">
+        <div class="avatar">🍽</div>
+        <div class="header-info">
+          <h2>James — Maître d'</h2>
+          <div class="status">
+            <div class="status-dot"></div>
+            Ready to take your order
+          </div>
+        </div>
+      </div>
+      <button class="close-btn" onclick="clearChat()" title="Clear">✕</button>
+    </div>
+
+    <div class="quick-actions">
+      <button class="quick-button" data-quick="I'd like to place an order">
+        <span class="btn-icon">🛎</span> Place an Order
+      </button>
+      <button class="quick-button" data-quick="What are your dietary options?">
+        <span class="btn-icon">🌿</span> Dietary Info
+      </button>
+      <button class="quick-button" data-quick="What's the estimated wait time?">
+        <span class="btn-icon">⏳</span> Wait Time
+      </button>
+      <button class="quick-button" data-quick="I need help choosing a dish">
+        <span class="btn-icon">🤔</span> Recommend
+      </button>
+    </div>
+
+    <div id="chat-container">
+      <div class="message bot-message">
+        <div class="msg-wrap">
+          <span class="msg-label">James</span>
+          <div class="message-bubble">
+            Good evening, and welcome to <strong>Ember &amp; Crest</strong>. I'm James, your personal dining concierge. Whether you'd like to explore tonight's menu, place an order, or ask about our wine selection — I'm entirely at your service. 🕯
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="input-container">
+      <form id="order-form" onsubmit="return false;">
+        <textarea
+          id="order-input"
+          placeholder="Tell me what you'd like to order…"
+          rows="1"
+          autocomplete="off"
+        ></textarea>
+        <button id="send-button" type="button" title="Send">➤</button>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="widget-foot">
+    <a class="foot-link">Reservations</a>
+    <div class="foot-dot"></div>
+    <a class="foot-link">Allergens</a>
+    <div class="foot-dot"></div>
+    <a class="foot-link">Contact</a>
+  </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

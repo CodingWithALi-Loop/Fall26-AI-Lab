@@ -1,0 +1,261 @@
+item,category,price,stock,veg,spicy,preparation_time
+Egg McMuffin,Breakfast,212.0,25,no,no,12 min
+Egg White Delight,Breakfast,217.0,25,no,no,12 min
+Sausage McMuffin,Breakfast,216.0,25,no,no,12 min
+Sausage McMuffin with Egg,Breakfast,285.0,25,no,no,12 min
+Sausage McMuffin with Egg Whites,Breakfast,292.0,25,no,no,12 min
+Steak & Egg McMuffin,Breakfast,240.0,25,no,no,12 min
+"Bacon, Egg & Cheese Biscuit (Regular Biscuit)",Breakfast,265.0,25,no,no,12 min
+"Bacon, Egg & Cheese Biscuit (Large Biscuit)",Breakfast,320.0,12,no,no,12 min
+"Bacon, Egg & Cheese Biscuit with Egg Whites (Regular Biscuit)",Breakfast,281.0,25,no,no,12 min
+"Bacon, Egg & Cheese Biscuit with Egg Whites (Large Biscuit)",Breakfast,320.0,12,no,no,12 min
+Sausage Biscuit (Regular Biscuit),Breakfast,233.0,25,no,no,12 min
+Sausage Biscuit (Large Biscuit),Breakfast,320.0,12,no,no,12 min
+Sausage Biscuit with Egg (Regular Biscuit),Breakfast,262.0,25,no,no,12 min
+Sausage Biscuit with Egg (Large Biscuit),Breakfast,320.0,12,no,no,12 min
+Sausage Biscuit with Egg Whites (Regular Biscuit),Breakfast,269.0,25,no,no,12 min
+Sausage Biscuit with Egg Whites (Large Biscuit),Breakfast,320.0,12,no,no,12 min
+Southern Style Chicken Biscuit (Regular Biscuit),Breakfast,208.0,25,no,no,12 min
+Southern Style Chicken Biscuit (Large Biscuit),Breakfast,320.0,12,no,no,12 min
+Steak & Egg Biscuit (Regular Biscuit),Breakfast,257.0,25,no,no,12 min
+"Bacon, Egg & Cheese McGriddles",Breakfast,290.0,25,no,no,12 min
+"Bacon, Egg & Cheese McGriddles with Egg Whites",Breakfast,266.0,25,no,no,12 min
+Sausage McGriddles,Breakfast,218.0,25,no,no,12 min
+"Sausage, Egg & Cheese McGriddles",Breakfast,292.0,25,no,no,12 min
+"Sausage, Egg & Cheese McGriddles with Egg Whites",Breakfast,268.0,25,no,no,12 min
+"Bacon, Egg & Cheese Bagel",Breakfast,285.0,25,no,no,12 min
+"Bacon, Egg & Cheese Bagel with Egg Whites",Breakfast,261.0,25,no,no,12 min
+"Steak, Egg & Cheese Bagel",Breakfast,245.0,25,no,no,12 min
+Big Breakfast (Regular Biscuit),Breakfast,320.0,12,no,no,12 min
+Big Breakfast (Large Biscuit),Breakfast,320.0,12,no,no,12 min
+Big Breakfast with Egg Whites (Regular Biscuit),Breakfast,320.0,12,no,no,12 min
+Big Breakfast with Egg Whites (Large Biscuit),Breakfast,320.0,12,no,no,12 min
+Big Breakfast with Hotcakes (Regular Biscuit),Breakfast,320.0,12,no,yes,12 min
+Big Breakfast with Hotcakes (Large Biscuit),Breakfast,320.0,12,no,yes,12 min
+Big Breakfast with Hotcakes and Egg Whites (Regular Biscuit),Breakfast,320.0,12,no,yes,12 min
+Big Breakfast with Hotcakes and Egg Whites (Large Biscuit),Breakfast,320.0,12,no,yes,12 min
+Hotcakes,Breakfast,208.0,25,no,yes,12 min
+Hotcakes and Sausage,Breakfast,220.0,25,no,yes,12 min
+Sausage Burrito,Breakfast,215.0,25,no,no,12 min
+Hash Brown,Breakfast,210.0,25,no,no,12 min
+Cinnamon Melts,Breakfast,214.0,25,no,no,12 min
+Fruit & Maple Oatmeal,Breakfast,281.0,25,yes,no,12 min
+Fruit & Maple Oatmeal without Brown Sugar,Breakfast,261.0,25,yes,no,12 min
+Big Mac,Beef & Pork,422.0,12,no,no,15 min
+Quarter Pounder with Cheese,Beef & Pork,382.0,25,no,no,15 min
+Quarter Pounder with Bacon & Cheese,Beef & Pork,390.0,25,no,no,15 min
+Quarter Pounder with Bacon Habanero Ranch,Beef & Pork,356.0,25,no,yes,15 min
+Quarter Pounder Deluxe,Beef & Pork,437.0,25,no,no,15 min
+Double Quarter Pounder with Cheese,Beef & Pork,389.0,25,no,no,15 min
+Hamburger,Beef & Pork,304.0,18,no,no,15 min
+Cheeseburger,Beef & Pork,307.0,25,no,no,15 min
+Double Cheeseburger,Beef & Pork,314.0,25,no,no,15 min
+Bacon Clubhouse Burger,Beef & Pork,317.0,25,no,no,15 min
+McDouble,Beef & Pork,303.0,25,no,no,15 min
+Bacon McDouble,Beef & Pork,309.0,25,no,no,15 min
+Daily Double,Beef & Pork,307.0,25,no,no,15 min
+Jalapeño Double,Beef & Pork,310.0,25,no,yes,15 min
+McRib,Beef & Pork,300.0,25,no,no,15 min
+Premium Crispy Chicken Classic Sandwich,Chicken & Fish,304.0,25,no,no,15 min
+Premium Grilled Chicken Classic Sandwich,Chicken & Fish,265.0,25,no,no,15 min
+Premium Crispy Chicken Club Sandwich,Chicken & Fish,301.0,25,no,no,15 min
+Premium Grilled Chicken Club Sandwich,Chicken & Fish,302.0,25,no,no,15 min
+Premium Crispy Chicken Ranch BLT Sandwich,Chicken & Fish,266.0,25,no,no,15 min
+Premium Grilled Chicken Ranch BLT Sandwich,Chicken & Fish,267.0,25,no,no,15 min
+Bacon Clubhouse Crispy Chicken Sandwich,Chicken & Fish,304.0,25,no,no,15 min
+Bacon Clubhouse Grilled Chicken Sandwich,Chicken & Fish,265.0,25,no,no,15 min
+Southern Style Crispy Chicken Sandwich,Chicken & Fish,303.0,25,no,no,15 min
+McChicken,Chicken & Fish,274.0,25,no,no,15 min
+Bacon Cheddar McChicken,Chicken & Fish,288.0,25,no,no,15 min
+Bacon Buffalo Ranch McChicken,Chicken & Fish,294.0,25,no,yes,15 min
+Buffalo Ranch McChicken,Chicken & Fish,288.0,25,no,yes,15 min
+Premium McWrap Chicken & Bacon (Crispy Chicken),Chicken & Fish,332.0,25,no,no,15 min
+Premium McWrap Chicken & Bacon (Grilled Chicken),Chicken & Fish,333.0,25,no,no,15 min
+Premium McWrap Chicken & Ranch (Crispy Chicken),Chicken & Fish,332.0,25,no,no,15 min
+Premium McWrap Chicken & Ranch (Grilled Chicken),Chicken & Fish,333.0,25,no,no,15 min
+Premium McWrap Southwest Chicken (Crispy Chicken),Chicken & Fish,274.0,25,no,no,15 min
+Premium McWrap Southwest Chicken (Grilled Chicken),Chicken & Fish,275.0,25,no,no,15 min
+Premium McWrap Chicken Sweet Chili (Crispy Chicken),Chicken & Fish,276.0,25,no,no,15 min
+Premium McWrap Chicken Sweet Chili (Grilled Chicken),Chicken & Fish,277.0,25,no,no,15 min
+Chicken McNuggets (4 piece),Chicken & Fish,292.0,25,no,no,15 min
+Chicken McNuggets (6 piece),Chicken & Fish,292.0,25,no,no,15 min
+Chicken McNuggets (10 piece),Chicken & Fish,293.0,25,no,no,15 min
+Chicken McNuggets (20 piece),Chicken & Fish,413.0,12,no,no,15 min
+Chicken McNuggets (40 piece),Chicken & Fish,413.0,12,no,no,15 min
+Filet-O-Fish,Chicken & Fish,277.0,25,no,no,15 min
+Premium Bacon Ranch Salad (without Chicken),Salads,268.0,18,yes,no,10 min
+Premium Bacon Ranch Salad with Crispy Chicken,Salads,270.0,18,yes,no,10 min
+Premium Bacon Ranch Salad with Grilled Chicken,Salads,271.0,18,yes,no,10 min
+Premium Southwest Salad (without Chicken),Salads,266.0,18,yes,no,10 min
+Premium Southwest Salad with Crispy Chicken,Salads,268.0,18,yes,no,10 min
+Premium Southwest Salad with Grilled Chicken,Salads,269.0,18,yes,no,10 min
+Chipotle BBQ Snack Wrap (Crispy Chicken),Snacks & Sides,70.0,25,no,yes,8 min
+Chipotle BBQ Snack Wrap (Grilled Chicken),Snacks & Sides,70.0,25,no,yes,8 min
+Honey Mustard Snack Wrap (Crispy Chicken),Snacks & Sides,70.0,25,no,no,8 min
+Honey Mustard Snack Wrap (Grilled Chicken),Snacks & Sides,70.0,25,no,no,8 min
+Ranch Snack Wrap (Crispy Chicken),Snacks & Sides,93.0,25,no,no,8 min
+Ranch Snack Wrap (Grilled Chicken),Snacks & Sides,94.0,25,no,no,8 min
+Small French Fries,Snacks & Sides,78.0,25,no,no,8 min
+Medium French Fries,Snacks & Sides,159.0,25,no,no,8 min
+Large French Fries,Snacks & Sides,250.0,12,no,no,8 min
+Kids French Fries,Snacks & Sides,77.0,25,no,no,8 min
+Side Salad,Snacks & Sides,150.0,25,yes,no,8 min
+Apple Slices,Snacks & Sides,152.0,25,yes,no,8 min
+Fruit 'n Yogurt Parfait,Snacks & Sides,163.0,25,yes,no,8 min
+Baked Apple Pie,Desserts,185.0,20,yes,no,5 min
+Chocolate Chip Cookie,Desserts,191.0,20,no,no,5 min
+Oatmeal Raisin Cookie,Desserts,191.0,20,yes,no,5 min
+Kids Ice Cream Cone,Desserts,109.0,20,no,no,5 min
+Hot Fudge Sundae,Desserts,186.0,20,no,yes,5 min
+Hot Caramel Sundae,Desserts,188.0,20,no,yes,5 min
+Strawberry Sundae,Desserts,187.0,20,no,no,5 min
+Coca-Cola Classic (Small),Beverages,50.0,40,no,no,3 min
+Coca-Cola Classic (Medium),Beverages,131.0,40,no,no,3 min
+Coca-Cola Classic (Large),Beverages,220.0,40,no,no,3 min
+Coca-Cola Classic (Child),Beverages,50.0,40,no,no,3 min
+Diet Coke (Small),Beverages,42.0,40,no,no,3 min
+Diet Coke (Medium),Beverages,123.0,40,no,no,3 min
+Diet Coke (Large),Beverages,220.0,40,no,no,3 min
+Diet Coke (Child),Beverages,42.0,40,no,no,3 min
+Dr Pepper (Small),Beverages,42.0,40,no,no,3 min
+Dr Pepper (Medium),Beverages,123.0,40,no,no,3 min
+Dr Pepper (Large),Beverages,220.0,40,no,no,3 min
+Dr Pepper (Child),Beverages,42.0,40,no,no,3 min
+Diet Dr Pepper (Small),Beverages,47.0,40,no,no,3 min
+Diet Dr Pepper (Medium),Beverages,128.0,40,no,no,3 min
+Diet Dr Pepper (Large),Beverages,220.0,40,no,no,3 min
+Diet Dr Pepper (Child),Beverages,47.0,40,no,no,3 min
+Sprite (Small),Beverages,39.0,40,no,no,3 min
+Sprite (Medium),Beverages,120.0,40,no,no,3 min
+Sprite (Large),Beverages,220.0,40,no,no,3 min
+Sprite (Child),Beverages,39.0,40,no,no,3 min
+1% Low Fat Milk Jug,Beverages,84.0,40,no,no,3 min
+Fat Free Chocolate Milk Jug,Beverages,92.0,40,no,no,3 min
+Minute Maid 100% Apple Juice Box,Beverages,97.0,40,yes,no,3 min
+Minute Maid Orange Juice (Small),Beverages,30.0,40,yes,no,3 min
+Minute Maid Orange Juice (Medium),Beverages,98.0,40,yes,no,3 min
+Minute Maid Orange Juice (Large),Beverages,180.0,40,yes,no,3 min
+Dasani Water Bottle,Beverages,84.0,40,yes,no,3 min
+Iced Tea (Small),Coffee & Tea,40.0,40,no,no,4 min
+Iced Tea (Medium),Coffee & Tea,97.0,40,no,no,4 min
+Iced Tea (Large),Coffee & Tea,200.0,40,no,no,4 min
+Iced Tea (Child),Coffee & Tea,40.0,40,no,no,4 min
+Sweet Tea (Small),Coffee & Tea,40.0,40,no,no,4 min
+Sweet Tea (Medium),Coffee & Tea,98.0,40,no,no,4 min
+Sweet Tea (Large),Coffee & Tea,200.0,40,no,no,4 min
+Sweet Tea (Child),Coffee & Tea,40.0,40,no,no,4 min
+Coffee (Small),Coffee & Tea,40.0,40,no,no,4 min
+Coffee (Medium),Coffee & Tea,95.0,40,no,no,4 min
+Coffee (Large),Coffee & Tea,200.0,40,no,no,4 min
+Latte (Small),Coffee & Tea,53.0,40,no,no,4 min
+Latte (Medium),Coffee & Tea,134.0,40,no,no,4 min
+Latte (Large),Coffee & Tea,240.0,40,no,no,4 min
+Caramel Latte (Small),Coffee & Tea,61.0,40,no,no,4 min
+Caramel Latte (Medium),Coffee & Tea,142.0,40,no,no,4 min
+Caramel Latte (Large),Coffee & Tea,240.0,40,no,no,4 min
+Hazelnut Latte (Small),Coffee & Tea,62.0,40,no,no,4 min
+Hazelnut Latte (Medium),Coffee & Tea,143.0,40,no,no,4 min
+Hazelnut Latte (Large),Coffee & Tea,240.0,40,no,no,4 min
+French Vanilla Latte (Small),Coffee & Tea,68.0,40,no,no,4 min
+French Vanilla Latte (Medium),Coffee & Tea,149.0,40,no,no,4 min
+French Vanilla Latte (Large),Coffee & Tea,240.0,40,no,no,4 min
+Latte with Sugar Free French Vanilla Syrup (Small),Coffee & Tea,110.0,40,no,no,4 min
+Latte with Sugar Free French Vanilla Syrup (Medium),Coffee & Tea,191.0,40,no,no,4 min
+Latte with Sugar Free French Vanilla Syrup (Large),Coffee & Tea,240.0,40,no,no,4 min
+Nonfat Latte (Small),Coffee & Tea,60.0,40,no,no,4 min
+Nonfat Latte (Medium),Coffee & Tea,141.0,40,no,no,4 min
+Nonfat Latte (Large),Coffee & Tea,240.0,40,no,no,4 min
+Nonfat Caramel Latte (Small),Coffee & Tea,68.0,40,no,no,4 min
+Nonfat Caramel Latte (Medium),Coffee & Tea,149.0,40,no,no,4 min
+Nonfat Caramel Latte (Large),Coffee & Tea,240.0,40,no,no,4 min
+Nonfat Hazelnut Latte (Small),Coffee & Tea,69.0,40,no,no,4 min
+Nonfat Hazelnut Latte (Medium),Coffee & Tea,150.0,40,no,no,4 min
+Nonfat Hazelnut Latte (Large),Coffee & Tea,240.0,40,no,no,4 min
+Nonfat French Vanilla Latte (Small),Coffee & Tea,75.0,40,no,no,4 min
+Nonfat French Vanilla Latte (Medium),Coffee & Tea,156.0,40,no,no,4 min
+Nonfat French Vanilla Latte (Large),Coffee & Tea,240.0,40,no,no,4 min
+Nonfat Latte with Sugar Free French Vanilla Syrup (Small),Coffee & Tea,117.0,40,no,no,4 min
+Nonfat Latte with Sugar Free French Vanilla Syrup (Medium),Coffee & Tea,198.0,40,no,no,4 min
+Nonfat Latte with Sugar Free French Vanilla Syrup (Large),Coffee & Tea,240.0,40,no,no,4 min
+Mocha (Small),Coffee & Tea,53.0,40,no,no,4 min
+Mocha (Medium),Coffee & Tea,134.0,40,no,no,4 min
+Mocha (Large),Coffee & Tea,240.0,40,no,no,4 min
+Mocha with Nonfat Milk (Small),Coffee & Tea,90.0,40,no,no,4 min
+Mocha with Nonfat Milk (Medium),Coffee & Tea,171.0,40,no,no,4 min
+Mocha with Nonfat Milk (Large),Coffee & Tea,200.0,40,no,no,4 min
+Caramel Mocha (Small),Coffee & Tea,61.0,40,no,no,4 min
+Caramel Mocha (Medium),Coffee & Tea,142.0,40,no,no,4 min
+Caramel Mocha (Large),Coffee & Tea,240.0,40,no,no,4 min
+Nonfat Caramel Mocha (Small),Coffee & Tea,68.0,40,no,no,4 min
+Nonfat Caramel Mocha (Medium),Coffee & Tea,149.0,40,no,no,4 min
+Nonfat Caramel Mocha (Large),Coffee & Tea,240.0,40,no,no,4 min
+Hot Chocolate (Small),Coffee & Tea,61.0,40,no,yes,4 min
+Hot Chocolate (Medium),Coffee & Tea,142.0,40,no,yes,4 min
+Hot Chocolate (Large),Coffee & Tea,240.0,40,no,yes,4 min
+Hot Chocolate with Nonfat Milk (Small),Coffee & Tea,98.0,40,no,yes,4 min
+Hot Chocolate with Nonfat Milk (Medium),Coffee & Tea,179.0,40,no,yes,4 min
+Hot Chocolate with Nonfat Milk (Large),Coffee & Tea,200.0,40,no,yes,4 min
+Regular Iced Coffee (Small),Coffee & Tea,40.0,40,no,no,4 min
+Regular Iced Coffee (Medium),Coffee & Tea,108.0,40,no,no,4 min
+Regular Iced Coffee (Large),Coffee & Tea,200.0,40,no,no,4 min
+Caramel Iced Coffee (Small),Coffee & Tea,40.0,40,no,no,4 min
+Caramel Iced Coffee (Medium),Coffee & Tea,108.0,40,no,no,4 min
+Caramel Iced Coffee (Large),Coffee & Tea,200.0,40,no,no,4 min
+Hazelnut Iced Coffee (Small),Coffee & Tea,40.0,40,no,no,4 min
+Hazelnut Iced Coffee (Medium),Coffee & Tea,109.0,40,no,no,4 min
+Hazelnut Iced Coffee (Large),Coffee & Tea,200.0,40,no,no,4 min
+French Vanilla Iced Coffee (Small),Coffee & Tea,40.0,40,no,no,4 min
+French Vanilla Iced Coffee (Medium),Coffee & Tea,115.0,40,no,no,4 min
+French Vanilla Iced Coffee (Large),Coffee & Tea,200.0,40,no,no,4 min
+Iced Coffee with Sugar Free French Vanilla Syrup (Small),Coffee & Tea,76.0,40,no,no,4 min
+Iced Coffee with Sugar Free French Vanilla Syrup (Medium),Coffee & Tea,157.0,40,no,no,4 min
+Iced Coffee with Sugar Free French Vanilla Syrup (Large),Coffee & Tea,200.0,40,no,no,4 min
+Iced Mocha (Small),Coffee & Tea,58.0,40,no,no,4 min
+Iced Mocha (Medium),Coffee & Tea,139.0,40,no,no,4 min
+Iced Mocha (Large),Coffee & Tea,240.0,40,no,no,4 min
+Iced Mocha with Nonfat Milk (Small),Coffee & Tea,95.0,40,no,no,4 min
+Iced Mocha with Nonfat Milk (Medium),Coffee & Tea,176.0,40,no,no,4 min
+Iced Mocha with Nonfat Milk (Large),Coffee & Tea,200.0,40,no,no,4 min
+Iced Caramel Mocha (Small),Coffee & Tea,66.0,40,no,no,4 min
+Iced Caramel Mocha (Medium),Coffee & Tea,147.0,40,no,no,4 min
+Iced Caramel Mocha (Large),Coffee & Tea,240.0,40,no,no,4 min
+Iced Nonfat Caramel Mocha (Small),Coffee & Tea,73.0,40,no,no,4 min
+Iced Nonfat Caramel Mocha (Medium),Coffee & Tea,154.0,40,no,no,4 min
+Iced Nonfat Caramel Mocha (Large),Coffee & Tea,240.0,40,no,no,4 min
+Frappé Mocha (Small),Coffee & Tea,60.0,40,no,no,4 min
+Frappé Mocha (Medium),Coffee & Tea,141.0,40,no,no,4 min
+Frappé Mocha (Large),Coffee & Tea,240.0,40,no,no,4 min
+Frappé Caramel (Small),Coffee & Tea,62.0,40,no,no,4 min
+Frappé Caramel (Medium),Coffee & Tea,143.0,40,no,no,4 min
+Frappé Caramel (Large),Coffee & Tea,240.0,40,no,no,4 min
+Frappé Chocolate Chip (Small),Coffee & Tea,69.0,40,no,no,4 min
+Frappé Chocolate Chip (Medium),Coffee & Tea,150.0,40,no,no,4 min
+Frappé Chocolate Chip (Large),Coffee & Tea,240.0,40,no,no,4 min
+Blueberry Pomegranate Smoothie (Small),Smoothies & Shakes,468.0,20,no,no,6 min
+Blueberry Pomegranate Smoothie (Medium),Smoothies & Shakes,549.0,20,no,no,6 min
+Blueberry Pomegranate Smoothie (Large),Smoothies & Shakes,668.0,12,no,no,6 min
+Strawberry Banana Smoothie (Small),Smoothies & Shakes,464.0,20,no,no,6 min
+Strawberry Banana Smoothie (Medium),Smoothies & Shakes,545.0,20,no,no,6 min
+Strawberry Banana Smoothie (Large),Smoothies & Shakes,664.0,12,no,no,6 min
+Mango Pineapple Smoothie (Small),Smoothies & Shakes,462.0,20,yes,no,6 min
+Mango Pineapple Smoothie (Medium),Smoothies & Shakes,543.0,20,yes,no,6 min
+Mango Pineapple Smoothie (Large),Smoothies & Shakes,662.0,12,yes,no,6 min
+Vanilla Shake (Small),Smoothies & Shakes,451.0,20,no,no,6 min
+Vanilla Shake (Medium),Smoothies & Shakes,532.0,20,no,no,6 min
+Vanilla Shake (Large),Smoothies & Shakes,651.0,12,no,no,6 min
+Strawberry Shake (Small),Smoothies & Shakes,454.0,20,no,no,6 min
+Strawberry Shake (Medium),Smoothies & Shakes,535.0,20,no,no,6 min
+Strawberry Shake (Large),Smoothies & Shakes,654.0,12,no,no,6 min
+Chocolate Shake (Small),Smoothies & Shakes,453.0,20,no,no,6 min
+Chocolate Shake (Medium),Smoothies & Shakes,534.0,20,no,no,6 min
+Chocolate Shake (Large),Smoothies & Shakes,653.0,12,no,no,6 min
+Shamrock Shake (Medium),Smoothies & Shakes,533.0,20,no,no,6 min
+Shamrock Shake (Large),Smoothies & Shakes,652.0,12,no,no,6 min
+McFlurry with M&M's™ Candies (Small),Smoothies & Shakes,526.0,20,no,no,6 min
+McFlurry with M&M's™ Candies (Medium),Smoothies & Shakes,607.0,20,no,no,6 min
+McFlurry with M&M's™ Candies (Snack),Smoothies & Shakes,526.0,20,no,no,6 min
+McFlurry with Oreo Cookies (Small),Smoothies & Shakes,524.0,20,no,no,6 min
+McFlurry with Oreo Cookies (Medium),Smoothies & Shakes,605.0,20,no,no,6 min
+McFlurry with Oreo Cookies (Snack),Smoothies & Shakes,524.0,20,no,no,6 min
+McFlurry with Reese's Peanut Butter Cups (Medium),Smoothies & Shakes,579.0,20,no,no,6 min
+McFlurry with Reese's Peanut Butter Cups (Snack),Smoothies & Shakes,498.0,20,no,no,6 min

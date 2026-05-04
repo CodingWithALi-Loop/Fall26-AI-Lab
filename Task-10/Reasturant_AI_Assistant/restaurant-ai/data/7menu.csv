@@ -1,0 +1,4 @@
+item,category,price,stock,veg,spicy,preparation_time
+Pizza,Fast Food,1200,30,no,no,15 min
+Burger,Fast Food,500,16,no,yes,10 min
+Fries,Sides,300,0,yes,no,5 min

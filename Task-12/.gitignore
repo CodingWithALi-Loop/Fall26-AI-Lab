@@ -1,0 +1,94 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+ENV/
+env/
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Flask
+instance/
+.webassets-cache
+.flask_session/
+
+# Logging
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*~
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Uploads
+uploads/
+temp/
+cache/
+
+# OS
+.DS_Store
+Thumbs.db
+.directory
+
+# Testing
+.coverage
+.pytest_cache/
+htmlcov/
+.tox/
+
+# Data files (optional - uncomment if you want to track them)
+# cleaned_hadith.csv
+# faiss_index.faiss
+# embeddings.npy
+# test_*.csv
+
+# Node modules (if using any frontend tools)
+node_modules/
+npm-debug.log
+
+# Misc
+.env.example.local
+debug.log

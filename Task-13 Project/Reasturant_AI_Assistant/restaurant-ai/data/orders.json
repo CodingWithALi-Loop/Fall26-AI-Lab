@@ -1,0 +1,112 @@
+{
+  "completed_orders": [
+    {
+      "session_id": "session_1776368021500_5kbo497oz",
+      "order_id": "424998A5",
+      "items": [
+        {
+          "item": "Burger",
+          "quantity": 2
+        }
+      ],
+      "status": "completed",
+      "customer_info": {
+        "name": "Ali",
+        "phone": "03014774748",
+        "delivery_type": "delivery",
+        "address": "45bgy",
+        "special_instructions": ""
+      },
+      "created_at": "2026-04-17T00:41:34.620792",
+      "last_updated": "2026-04-17T00:42:27.065250",
+      "completed_at": "2026-04-17T00:42:38.452064",
+      "total_amount": 1000.0
+    },
+    {
+      "session_id": "session_1776368021500_5kbo497oz",
+      "order_id": "3F488E4E",
+      "items": [
+        {
+          "item": "Burger",
+          "quantity": 2
+        }
+      ],
+      "status": "completed",
+      "customer_info": {
+        "name": "ju",
+        "phone": "9",
+        "delivery_type": "delivery",
+        "address": "89",
+        "special_instructions": "no onion"
+      },
+      "created_at": "2026-04-17T00:44:34.584770",
+      "last_updated": "2026-04-17T00:45:11.815519",
+      "completed_at": "2026-04-17T00:45:19.705860",
+      "total_amount": 1000.0
+    },
+    {
+      "session_id": "session_1776520024206_be5bmamn2",
+      "order_id": "BE8261BC",
+      "items": [
+        {
+          "item": "Hamburger",
+          "quantity": 5
+        }
+      ],
+      "status": "completed",
+      "customer_info": {
+        "name": "cance",
+        "phone": "03014789890",
+        "delivery_type": "pickup",
+        "special_instructions": ""
+      },
+      "created_at": "2026-04-18T18:47:41.862846",
+      "last_updated": "2026-04-18T18:48:13.063800",
+      "completed_at": "2026-04-18T18:48:18.624640",
+      "total_amount": 1520.0
+    },
+    {
+      "session_id": "session_1776657014054_28usjy47o",
+      "order_id": "9F15EB86",
+      "items": [
+        {
+          "item": "Hamburger",
+          "quantity": 2
+        }
+      ],
+      "status": "completed",
+      "customer_info": {
+        "name": "Ali",
+        "phone": "03014689345",
+        "delivery_type": "pickup",
+        "special_instructions": ""
+      },
+      "created_at": "2026-04-20T08:52:41.811255",
+      "last_updated": "2026-04-20T08:53:10.227712",
+      "completed_at": "2026-04-20T08:53:19.587625",
+      "total_amount": 608.0
+    },
+    {
+      "session_id": "session_1777875674434_xti176b6e",
+      "order_id": "7502B020",
+      "items": [
+        {
+          "item": "Hamburger",
+          "quantity": 2
+        }
+      ],
+      "status": "completed",
+      "customer_info": {
+        "name": "Ali",
+        "phone": "0909",
+        "delivery_type": "pickup",
+        "special_instructions": ""
+      },
+      "created_at": "2026-05-04T11:22:01.348630",
+      "last_updated": "2026-05-04T11:22:22.000338",
+      "completed_at": "2026-05-04T11:22:27.477156",
+      "total_amount": 608.0
+    }
+  ],
+  "last_updated": "2026-05-04T11:22:27.493031"
+}

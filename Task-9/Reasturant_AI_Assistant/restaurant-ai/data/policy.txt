@@ -1,0 +1,7 @@
+Restaurant Policies
+
+1. No refund after order prepared
+2. Delivery available within 5km
+3. Cash on delivery available
+4. Preparation time 10-20 minutes
+5. Orders cannot be cancelled after confirmation

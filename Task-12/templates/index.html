@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadith Search Engine</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="navbar-brand">
+                    <i class="fas fa-book-quran"></i>
+                    <span>Hadith Search Engine</span>
+                </div>
+                <div class="navbar-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-book"></i>
+                        <span id="stat-hadiths">{{ stats.total_hadiths }}</span> Hadiths
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hadith Search Engine</h1>
+                <p>Search through a comprehensive database of authentic Islamic traditions</p>
+                
+                <!-- Search Section -->
+                <div class="search-container">
+                    <form id="search-form" onsubmit="handleSearch(event)">
+                        <div class="search-box">
+                            <input 
+                                type="text" 
+                                id="search-query" 
+                                class="search-input"
+                                placeholder="Search Hadith..."
+                                autocomplete="off"
+                            >
+                            <button type="submit" class="search-btn">
+                                <i class="fas fa-search"></i>
+                                <span>Search</span>
+                            </button>
+                        </div>
+                        
+                        <!-- Filters -->
+                        <div class="filters-section">
+                            <div class="filter-group">
+                                <label for="book-filter">
+                                    <i class="fas fa-filter"></i> Book
+                                </label>
+                                <select id="book-filter" class="filter-select">
+                                    <option value="">All Books</option>
+                                    {% for book in books %}
+                                        <option value="{{ book }}">{{ book }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            
+                            <div class="filter-group">
+                                <label for="chapter-filter">
+                                    <i class="fas fa-layer-group"></i> Chapter
+                                </label>
+                                <select id="chapter-filter" class="filter-select">
+                                    <option value="">All Chapters</option>
+                                    {% for chapter in chapters %}
+                                        <option value="{{ chapter }}">{{ chapter }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            
+                            <div class="filter-group">
+                                <label for="sort-by">
+                                    <i class="fas fa-sort"></i> Sort By
+                                </label>
+                                <select id="sort-by" class="filter-select">
+                                    <option value="relevance">Most Relevant</option>
+                                    <option value="latest">Latest</option>
+                                </select>
+                            </div>
+                            
+                            <div class="filter-group">
+                                <label for="limit-results">
+                                    <i class="fas fa-list"></i> Results
+                                </label>
+                                <select id="limit-results" class="filter-select">
+                                    <option value="5">5 Results</option>
+                                    <option value="10" selected>10 Results</option>
+                                    <option value="20">20 Results</option>
+                                    <option value="50">50 Results</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="results-section" id="results-section" style="display: none;">
+        <div class="container">
+            <!-- Loading Spinner -->
+            <div id="loading-spinner" class="spinner-container" style="display: none;">
+                <div class="spinner"></div>
+                <p>Searching for hadiths...</p>
+            </div>
+
+            <!-- Results Info -->
+            <div id="results-info" class="results-info" style="display: none;">
+                <div class="results-header">
+                    <h2>
+                        <span id="results-count">0</span> Results Found
+                    </h2>
+                    <div class="results-metadata">
+                        <span id="processing-time">Processing time: 0ms</span>
+                        <button class="btn-back" onclick="resetSearch()">
+                            <i class="fas fa-arrow-left"></i> New Search
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results Container -->
+            <div id="results-container" class="results-grid">
+                <!-- Results will be inserted here -->
+            </div>
+
+            <!-- No Results Message -->
+            <div id="no-results" class="no-results" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h3>No Results Found</h3>
+                <p>Try adjusting your search query or filters</p>
+            </div>
+
+            <!-- Error Message -->
+            <div id="error-message" class="error-message" style="display: none;">
+                <i class="fas fa-exclamation-circle"></i>
+                <h3>Error</h3>
+                <p id="error-text"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section" id="stats-section">
+        <div class="container">
+            <h2>Database Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <i class="fas fa-quran"></i>
+                    <h3>{{ stats.total_hadiths }}</h3>
+                    <p>Total Hadiths</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-book"></i>
+                    <h3>{{ stats.books }}</h3>
+                    <p>Books</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-layer-group"></i>
+                    <h3>{{ stats.chapters }}</h3>
+                    <p>Chapters</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-search"></i>
+                    <h3>Instant</h3>
+                    <p>Search Speed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Hadith Search Engine. Built with <i class="fas fa-heart"></i> for Islamic Knowledge</p>
+            <div class="footer-links">
+                <a href="#"><i class="fas fa-info-circle"></i> About</a>
+                <a href="#"><i class="fas fa-shield-alt"></i> Privacy</a>
+                <a href="#"><i class="fas fa-file-contract"></i> Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
